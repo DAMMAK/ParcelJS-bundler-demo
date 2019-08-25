@@ -1,0 +1,53 @@
+.title {
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.userAvatar {
+  border-radius: 50%;
+}
+.user {
+  list-style: none;
+  display: flex;
+  border-bottom: solid 1px #ccc;
+  padding-left: -2rem;
+  /* padding: 0; */
+  margin-left: -2.5rem;
+  padding: 10px;
+
+  &-details {
+    margin-left: 10px;
+    margin-top: 4px;
+  }
+
+  &-name {
+    font-weight: bolder;
+    font-size: 18px;
+  }
+  &-email {
+    font-style: italic;
+  }
+}
+body {
+  background-color: rgb(131, 4, 153);
+  font-size: 16px;
+}
+
+.users {
+  width: 40vw;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.loader {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: (-50, -50);
+  z-index: 1000;
+}
