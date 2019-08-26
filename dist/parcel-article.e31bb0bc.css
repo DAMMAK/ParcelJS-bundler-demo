@@ -1,7 +1,8 @@
-.title {
-  color: #fff;
-  margin-bottom: 2rem;
-  text-align: center;
+.parcelImg {
+  height: 100px;
+  width: 500px;
+  margin-left: 30%;
+  padding-bottom: 2rem;
 }
 
 .userAvatar {
@@ -11,11 +12,13 @@
 .user {
   list-style: none;
   display: flex;
-  border-bottom: solid 1px #ccc;
   padding-left: -2rem;
   /* padding: 0; */
   margin-left: -2.5rem;
   padding: 10px;
+}
+.user:not(:last-child) {
+  border-bottom: solid 1px #ccc;
 }
 .user-details {
   margin-left: 10px;

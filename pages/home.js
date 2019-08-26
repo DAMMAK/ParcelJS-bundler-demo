@@ -1,12 +1,14 @@
 import "./home.scss";
 import { users } from "./users";
+import img from "../images/parcel.png";
 
 export const home = () => {
   const wrapper = document.createElement("section");
   wrapper.classList = "home";
-  const title = document.createElement("h1");
-  title.innerHTML = "Welcome to Parcel Bundler Demo";
-  title.classList = "title";
+  const parcelImg = document.createElement("img");
+  parcelImg.src = img;
+  parcelImg.classList = "parcelImg";
+
   const ul = document.createElement("ul");
   ul.classList = "users";
   //Create a loader element
@@ -45,7 +47,7 @@ export const home = () => {
     });
   });
 
-  wrapper.appendChild(title);
+  wrapper.appendChild(parcelImg);
   wrapper.appendChild(ul);
 
   return wrapper;

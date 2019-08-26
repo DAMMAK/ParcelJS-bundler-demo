@@ -1,7 +1,17 @@
-.title {
-  color: #fff;
-  margin-bottom: 2rem;
-  text-align: center;
+// .title {
+//   color: #fff;
+//   margin-bottom: 2rem;
+//   text-align: center;
+// }
+
+.parcelImg {
+  height: 100px;
+  width: 500px;
+  // position: absolute;
+  // top: 0;
+  // left: 50%;
+  margin-left: 30%;
+  padding-bottom: 2rem;
 }
 .userAvatar {
   border-radius: 50%;
@@ -9,12 +19,14 @@
 .user {
   list-style: none;
   display: flex;
-  border-bottom: solid 1px #ccc;
   padding-left: -2rem;
   /* padding: 0; */
   margin-left: -2.5rem;
   padding: 10px;
 
+  &:not(:last-child) {
+    border-bottom: solid 1px #ccc;
+  }
   &-details {
     margin-left: 10px;
     margin-top: 4px;

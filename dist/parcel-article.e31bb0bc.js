@@ -204,6 +204,8 @@ var users = function users() {
 };
 
 exports.users = users;
+},{}],"images/parcel.png":[function(require,module,exports) {
+module.exports = "/parcel.1768dc48.png";
 },{}],"pages/home.js":[function(require,module,exports) {
 "use strict";
 
@@ -216,12 +218,16 @@ require("./home.scss");
 
 var _users = require("./users");
 
+var _parcel = _interopRequireDefault(require("../images/parcel.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var home = function home() {
   var wrapper = document.createElement("section");
   wrapper.classList = "home";
-  var title = document.createElement("h1");
-  title.innerHTML = "Welcome to Parcel Bundler Demo";
-  title.classList = "title";
+  var parcelImg = document.createElement("img");
+  parcelImg.src = _parcel.default;
+  parcelImg.classList = "parcelImg";
   var ul = document.createElement("ul");
   ul.classList = "users"; //Create a loader element
 
@@ -265,7 +271,7 @@ var home = function home() {
       ul.appendChild(li); // append the list to parent element ul
     });
   });
-  wrapper.appendChild(title);
+  wrapper.appendChild(parcelImg);
   wrapper.appendChild(ul);
   return wrapper;
 }; //Accept a string and return the string in capitalize format
@@ -276,7 +282,7 @@ exports.home = home;
 var capitalize = function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 };
-},{"./home.scss":"pages/home.scss","./users":"pages/users.js"}],"index.js":[function(require,module,exports) {
+},{"./home.scss":"pages/home.scss","./users":"pages/users.js","../images/parcel.png":"images/parcel.png"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _home = require("./pages/home");
