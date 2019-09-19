@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "parcel index.html"
+    "serve": "parcel index.html",
+    "build": "rm -rf ./dist/* && parcel build --public-url . index.html"
   },
   "keywords": [],
   "author": "",
