@@ -16,7 +16,7 @@ export const home = () => {
   loader.innerHTML = "Loading...";
   loader.classList = "loader";
   wrapper.appendChild(loader); // add the loader to home wrapper element
-
+  // Alittle modification on the repository
   users().then(({ results }) => {
     loader.style.display = "none"; // hide loader when users are available from the API.
     results.forEach(user => {
